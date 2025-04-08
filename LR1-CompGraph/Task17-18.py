@@ -155,7 +155,7 @@ def zoom(x0, y0, z0, x1, y1, z1, x2, y2, z2):
 arr_v = open_v("model_1.obj")
 arr_vt = open_vt("model_1.obj")
 arr_f = open_f_with_texture("model_1.obj")
-texture = np.array(Image.open("bunny-atlas.jpg"))
+texture = np.array(Image.open("bunny_atlas.jpg"))
 
 vertex_normals = calculate_vertex_normals(arr_v, [[f[0] for f in face] for face in arr_f])
 arr_v = rotate(arr_v)
